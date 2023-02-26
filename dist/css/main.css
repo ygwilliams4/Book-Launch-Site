@@ -1,1 +1,268 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*variables */
+header {
+  width: 100%;
+  padding: 1.5rem 4rem;
+  height: calc(100vh + 250px);
+  position: relative;
+  background-image: url("/img/top-banner-bckg.jpg");
+  background-color: #000000f3;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+header nav .hamburger.active .line:nth-child(1) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+header nav .hamburger.active .line:nth-child(2) {
+  display: none;
+}
+
+header nav .hamburger.active .line:nth-child(3) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: relative;
+  bottom: 10px;
+}
+
+header nav .hamburger {
+  display: block;
+  width: 40px;
+  height: 50px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+header nav .hamburger:hover {
+  cursor: pointer;
+}
+
+header nav .hamburger:hover .line {
+  border: 1px solid #ffffff;
+}
+
+header nav .hamburger .line {
+  height: 5px;
+  margin: 6px 0;
+  width: 40px;
+  background-color: #b6870f;
+}
+
+header .hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+header .hero-section .header-text {
+  padding: 6rem 4rem;
+}
+
+header .hero-section .header-text h1 {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 5.5rem;
+  margin: 1.5rem 0;
+}
+
+header .hero-section .header-text h1:nth-child(3) {
+  margin-left: 7rem;
+}
+
+header .hero-section .header-text p:nth-child(1) {
+  color: #b6870f;
+}
+
+header .hero-section .header-text p:nth-child(4) {
+  color: #b6870f;
+  margin-left: 7rem;
+}
+
+header .hero-section .header-text p:nth-child(5) {
+  margin: 2rem 0;
+  color: #636363;
+}
+
+header .hero-section .header-text .header-cta {
+  width: 120px;
+  height: 40px;
+  border: 1.5px solid #ffffff;
+  outline: none;
+  background: transparent;
+  color: #b6870f;
+}
+
+#about {
+  width: 100%;
+  height: calc(100vh + 300px);
+}
+
+#about .profile-card {
+  width: 400px;
+  height: 500px;
+  border: 5px solid #ffffff;
+  text-align: center;
+  background-color: #f7f7f7;
+  position: relative;
+  top: 20%;
+  left: 5%;
+}
+
+#about .profile-card .img img {
+  width: 100%;
+}
+
+#about .profile-card h2 {
+  font-size: 45px;
+  margin: 1.5rem 0;
+}
+
+#about .profile-card h2 span {
+  color: #b6870f;
+}
+
+#about .profile-card p {
+  color: #636363;
+  margin: 0 2.5rem;
+}
+
+#about .details {
+  border: 2px solid red;
+  width: 70%;
+  background-image: url(/img/about-me-bckg.jpg);
+  background-position: center;
+  background-color: #0000008a;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 80%;
+  position: relative;
+  bottom: 45%;
+  z-index: -1;
+  margin-left: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about .details .text {
+  width: 60%;
+  border: 2px solid red;
+  text-align: center;
+  margin-left: 2rem;
+  padding: 1rem;
+}
+
+#about .details .text p:nth-child(2) {
+  color: #b6870f;
+}
+
+#books {
+  width: 100%;
+  height: 100vh;
+}
+
+#books h2 {
+  text-align: center;
+  font-size: 45px;
+  margin: 1rem;
+}
+
+#books .books-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin: 3.5rem;
+  grid-gap: 25px;
+}
+
+#books .books-container .book-card {
+  text-align: center;
+}
+
+#books .books-container .book-card img {
+  width: 100%;
+}
+
+#books .books-container .book-card h4 {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0.5rem;
+}
+
+#books .books-container .book-card p {
+  color: #b6870f;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 25px;
+  margin: 0.5rem;
+}
+
+#books .books-cta {
+  width: 120px;
+  height: 40px;
+  border: 1px solid #b6870f;
+  background: transparent;
+  color: #b6870f;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#counter {
+  width: 100%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #b6870fa4;
+  background-blend-mode: multiply;
+  background-image: url("/img/book-bckg.jpg");
+}
+/*# sourceMappingURL=main.css.map */
