@@ -36,7 +36,7 @@ header{
             display:block;
             width: 40px;
             height: 50px;
-            transition: all 0.5s ease-in;
+            transition: all 0.9s ease-in;
 
             &:hover{
                 cursor: pointer;
@@ -134,7 +134,6 @@ header{
     }
 
     .details{
-        border: 2px solid red;
         width: 70%;
         background-image: url(/img/about-me-bckg.jpg);
         background-position: center;
@@ -152,13 +151,27 @@ header{
 
         .text{
             width: 60%;
-            border: 2px solid red;
             text-align: center;
             margin-left: 2rem;
-            padding: 1rem;
+            padding: 1rem 2.5rem;
 
+            h2{
+                color:  $default-color;
+                font-size: 35px;
+                margin: 2rem 0;
+            }
+            h3{
+                color: $primary-color;
+                font-weight: 900;
+                font-size: 25px;
+                margin: 3rem 0 1rem 0;
+            }
             p:nth-child(2){
                 color: $primary-color;
+                font-size: large;
+            }
+            p:nth-child(4){
+                color: $default-color;
 
             }
         }
@@ -217,12 +230,257 @@ header{
 
 #counter{
     width: 100%;
-    height: 40vh;
+    height: 45vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #b6870fa4;
+    background-color: $primary-color;
     background-blend-mode: multiply;
     background-image: url("/img/book-bckg.jpg");
+    color: $default-color;
+
+    h3{
+        font-size: 45px;
+        font-weight: 900;
+        padding: 2rem 0;
+    }
+    p{
+        font-size: 20px;
+        padding: 0 10px;
+    }
 }
 
+#blog{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+
+    &>h2{
+        font-size: 45px;
+    }
+
+    .blog-container{
+        display: grid;
+        margin-top: 3rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px;
+        grid-gap: 2rem;
+        justify-content: center;
+
+        .col{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 2px solid #cacaca;
+
+
+            .text{
+                text-align: left;
+                padding: 2rem;
+
+                h2{
+                    font-weight: bold;
+                    padding: 1rem 0;
+                }
+
+                p:nth-child(2){
+                    color: $primary-color;
+                }
+                p:nth-child(3){
+                    color: $secondary-color;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}
+.blog-img1{
+    background-image: url("/img/blog1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.blog-img2{
+    background-image: url("/img/blog2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#testimonial{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/img/quotes-bckg.jpg");
+    background-color: #000000d7;
+    background-blend-mode: multiply;
+    padding: 3rem 0 0 0;
+    
+    h2{
+        color: $default-color;
+        font-weight: 900;
+        font-size: 45px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .container{
+        width:50%;
+        margin: 1rem auto;
+        height: 70%;
+
+        .review{
+            height: 100%;
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 3rem;
+
+            p{
+                color: $default-color;
+                text-align: center;
+                margin: 1rem 0;
+            }
+            h3{
+                font-size: 35px;
+                color: $primary-color;
+                margin: 1.5rem 0 0 0;
+
+                &::before{
+                    content: url("/img/quotes.svg");
+                    display:block;
+                }
+            }
+        }
+    }
+}
+
+#cta{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    padding: 0 5rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary-color;
+    background-blend-mode:darken;
+    color: $default-color;
+    background-image: url("/img/social-bckg.jpg");
+}
+
+#contact{
+    width: 100%;
+    height: 75vh;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $default-color;
+    
+    .container{
+    display: grid;
+    height: 80%;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    .contact-info{
+        padding: 2rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .col1{
+            p{
+                color: $primary-color;
+            }
+        }
+
+        .col2{
+            h3{
+                font-weight: 900;
+                font-size: 35px;
+            }
+            p{
+                color: $secondary-color;
+                padding: 0.5rem 0;
+            }
+        }
+    }
+    .contact-form{
+        padding: 1rem;
+
+        h3{
+            margin: 0.5rem 0;
+            font-weight: 900;
+            font-size: 30px;
+        }
+        #name{
+            width: 49%;
+            height: 40px;
+            background-color: #000;
+            border: none;
+            outline: none;
+            padding: 1rem;
+        }
+        #email{
+            width: 50%;
+            height: 40px;
+            background-color: #000;
+            border: none;
+            outline: none;
+            padding: 1rem;
+        }
+        textarea{
+            display:block;
+            background-color: #000;
+            border: none;
+            outline: none;
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            font-family: serif;
+        }
+        .submit-btn{
+            width: 120px;
+            height: 50px;
+            background-color: $primary-color;
+            outline:none;
+            border:  none;
+            color: $default-color;
+        }
+    }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 65px;
+    background-color: $default-color2;
+    color: $secondary-color;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    font-weight: bold;
+    // border-top: 1px solid $secondary-color;
+
+    .logos{
+        display: flex;
+        gap: 2rem;
+    }
+}
+.social-icons{
+    display: flex;
+    gap: 10px;
+}
+.social-icons a{
+    border: 1px solid $default-color;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width : 40px;
+    height : 40px; 
+}
