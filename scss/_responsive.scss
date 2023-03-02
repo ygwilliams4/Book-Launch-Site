@@ -1,0 +1,133 @@
+@media (max-width: 425px) {
+    header{
+        padding: 2px;
+
+        .hero-section{
+            display: flex;
+            flex-direction: column;
+            // position: relative;
+
+            .hero-img{
+                max-width:100%;
+                display:none;
+            }
+            .header-text{
+                padding: 0.5rem;
+
+                h1:nth-child(3){
+                    margin-left: 0;
+                }
+
+                p:nth-child(4){
+                    margin-left: 0;
+                }
+                p:nth-child(5){
+                    margin : 1rem 0;
+                    width: 75%;
+                }
+            }
+        }
+    }
+
+   #about{
+    display: flex;
+    flex-direction: column;
+    .profile-card{
+        top:0;
+        left: 0;
+        border-color: $primary-color;
+        width: 100%;
+        min-height: fit-content;
+        padding-bottom: 1rem;
+    }
+    .details{
+        width: 100%;
+        bottom:0;
+        margin-left: 0 ;
+        z-index: 5;
+        margin-top: 0.5rem;
+        margin-left: 0;
+
+        .text{
+            width: 100%;
+            padding: 0.5rem;
+            margin-left: 0;
+        }
+    }
+   }
+
+   #books{
+    height: fit-content;
+    padding-bottom: 1rem;
+    .books-container{
+        grid-template-columns: 1fr;
+    }
+   }
+   #counter{
+    flex-direction: column;
+    height: fit-content;
+    background-repeat: no-repeat;
+
+    // overflow-y: scroll;
+    // -webkit-scrollbar:hidden;
+   }
+   #blog{
+    height: fit-content;
+    .blog-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px 600px;
+
+
+        .col{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+
+        }
+    }
+   }
+   #testimonial{
+    .container{
+        width: 100%;
+
+        .review{
+            padding: 1rem 0;
+        }
+    }
+   }
+   #cta{
+    padding: 1rem;
+    flex-direction: column;
+   }
+   #contact{
+    height: fit-content;
+    .container{
+        width:100%;
+        height:100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        .contact-info{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .contact-form{
+            #name,
+            #email{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+   }
+
+   footer{
+    flex-direction: column;
+    padding: 0.5rem;
+
+    .logos{
+        gap: 0.5rem;
+    }
+   }
+    
+}
